@@ -1,1 +1,3 @@
 # repository
+
+This repo consists of common helper functions that can be adapted across a variety of programs. It is intended to simplyify code by providing single line functions for commonly used blocks of code such as IO redirection between stdin/out/err from/to specified files. The safe_ops are used for managing errors for a variety of special functions such as managing memory, handling file descriptors, and other things. This also comes with a makefile specifically used for generating the necessary object files associated with these helper functions. None of these are designed to be executables
