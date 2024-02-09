@@ -9,5 +9,12 @@ CFLAGS = -Wall -Wextra -Werror -pedantic -ansi
 ALL_C = IOstd.c safe_ops.c
 ALL_O = $(ALL_C:.c=.o)
 
+.PHONY: all clean
+
+all: $(ALL_O)
+
 %.o : %.c %.h include_all.h
 	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(ALL_O)
