@@ -155,7 +155,8 @@ int safe_creat(const char *filename, mode_t permissions) {
  *         printf("File '%s' created successfully.\n", filename);
  *         		*/
         return file_desc;
-    } else {
+    } 
+    else {
         perror("creat");
 		free(filename);
         exit(EXIT_FAILURE);
